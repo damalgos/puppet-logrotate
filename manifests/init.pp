@@ -23,6 +23,7 @@ class logrotate (
   String $root_user                      = $logrotate::params::root_user,
   String $root_group                     = $logrotate::params::root_group,
   Array[String[1]] $logrotate_args       = [],
+  String $logrotate_log                  = undef,
   Boolean $cron_always_output            = false,
 ) inherits logrotate::params {
 
